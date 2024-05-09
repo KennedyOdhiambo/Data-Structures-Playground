@@ -2,7 +2,10 @@
 For each query string, determine how many times it occurs in the list of input strings. 
 Return an array of the results.*/
 
-function matchingStrings(stringList: string[], queries: string[]): number[] {
+function matchingStrings(
+  stringList: Array<string>,
+  queries: Array<string>
+): number[] {
   const countArray: Array<number> = [];
   for (const query of queries) {
     const occurance = stringList.filter((string) => string === query);
